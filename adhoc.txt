@@ -1,0 +1,6 @@
+ansible --version
+ansible localhost -m ping
+ansible localhost -m copy -a "content='Ansible is really awesome' dest=/etc/motd"
+ansible-doc copy
+ansible-doc lineinfile
+ansible localhost -m lineinfile -a "regexp='Ansible is really awesome' line='Ansible is super awesome' path=/etc/motd create=yes"
