@@ -25,3 +25,8 @@
         - mariadb-libs
         - mariadb-test
     when: config_db_path is defined
+  - name: start service
+    service: 
+      name: mariadb
+      state: restarted
+      enabled: true
