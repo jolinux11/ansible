@@ -27,6 +27,6 @@
     when: config_db_path is defined
   - name: start service
     service: 
-      name: mariadb
+      name: "{{ db_service }}"
       state: restarted
       enabled: true
