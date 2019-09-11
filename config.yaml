@@ -1,7 +1,0 @@
-- yum:
-    name: "{{ extra_package }}"
-    state: present
-- service: 
-    name: "{{ db_service }}"
-    state: started
-    enabled: true
